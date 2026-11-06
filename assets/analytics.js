@@ -2,7 +2,7 @@
 // Пустые значения отключают соответствующий сервис.
 const analyticsSettings = {
   googleMeasurementId: "",
-  yandexCounterId: "",
+  yandexCounterId: "114111699",
 };
 
 (() => {
@@ -34,10 +34,15 @@ const analyticsSettings = {
       };
     window.ym.l = Date.now();
     window.ym(Number(yandexCounterId), "init", {
+      ssr: true,
+      webvisor: true,
+      ecommerce: "dataLayer",
+      referrer: document.referrer,
+      url: location.href,
       clickmap: true,
       trackLinks: true,
       accurateTrackBounce: true,
     });
-    loadScript("https://mc.yandex.ru/metrika/tag.js");
+    loadScript("https://mc.yandex.ru/metrika/tag.js?id=" + yandexCounterId);
   }
 })();
