@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/02-teply-ugol/sitemap.xml

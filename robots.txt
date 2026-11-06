@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sitemap.xml
