@@ -916,10 +916,9 @@ h2 {
 }
 .route-row-main {
   display: grid;
-  grid-template-columns: 112px minmax(110px, 1.35fr) 60px minmax(
-      130px,
-      1.3fr
-    ) minmax(115px, 0.9fr) minmax(108px, 0.75fr) 128px;
+  grid-template-columns:
+    112px minmax(110px, 1.35fr) 60px minmax(130px, 1.3fr)
+    minmax(115px, 0.9fr) minmax(108px, 0.75fr) 128px;
   column-gap: 8px;
   align-items: center;
   min-height: 132px;
@@ -1784,10 +1783,9 @@ h2 {
     font-size: 55px;
   }
   .route-row-main {
-    grid-template-columns: 96px minmax(100px, 1fr) 25px minmax(
-        100px,
-        1.1fr
-      ) 107px 95px 105px;
+    grid-template-columns:
+      96px minmax(100px, 1fr) 25px minmax(100px, 1.1fr)
+      107px 95px 105px;
     gap: 6px;
     padding: 17px 15px;
   }

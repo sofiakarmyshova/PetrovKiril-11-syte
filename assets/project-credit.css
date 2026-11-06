@@ -1,0 +1,36 @@
+/* Общая подпись автора и ссылки на материалы проекта. */
+.project-credit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+  padding: 22px 24px;
+  margin: 12px auto 0;
+  font:
+    500 14px/1.6 system-ui,
+    sans-serif;
+  text-align: center;
+  border-top: 1px solid currentColor;
+}
+.project-credit strong {
+  font-weight: 600;
+}
+.project-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 16px;
+}
+.source-links a {
+  font-size: 13px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.source-links a:hover {
+  opacity: 0.75;
+}

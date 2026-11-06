@@ -1,0 +1,62 @@
+[
+  {
+    "project": "Ритм Банк",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-01-ritm-bank.zip",
+    "sha256": "352fde764c46200bba2d40a65209c5b6642dad69dfa50d8f07e23ab2d7c51392"
+  },
+  {
+    "project": "Тёплый угол",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-02-teply-ugol.zip",
+    "sha256": "e7a9cd9420cec2f34eddbb913736de9aa1f9e325d43a74f8a95a343096661e66"
+  },
+  {
+    "project": "ГородЛайн",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-03-gorodline.zip",
+    "sha256": "a31b306333296f9b8a339d2f4196521609e467d25f49ccf9649c35ceeb2d8116"
+  },
+  {
+    "project": "Рядом",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-04-ryadom.zip",
+    "sha256": "41b73676c3a1a9804ac37dd88b79724161fdce4fb1d7f2820d8c011bfa9314a5"
+  },
+  {
+    "project": "Код Академия",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-05-kod-academy.zip",
+    "sha256": "3eff0381df413cb0fc4a1d0f1c581141e1290f9e637997e938526fa345a5e526"
+  },
+  {
+    "project": "Медика",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-06-medika.zip",
+    "sha256": "a314809133af743154550ba36724a1360005871f403f1a3b8f618c92a2f03b6c"
+  },
+  {
+    "project": "АРТ.КВАРТАЛ",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-07-art-kvartal.zip",
+    "sha256": "427ba1393f04209641388afe0211f53afeac1573ccb15f16ad5e5144945f253c"
+  },
+  {
+    "project": "ИМПУЛЬС",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-08-impulse.zip",
+    "sha256": "626ef9b9c3baa997012648651ebb3bcf49e87d078205115bc1efe6901f8cde8f"
+  },
+  {
+    "project": "МАРКЕТ+",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-09-market-plus.zip",
+    "sha256": "294550cb593c7b0bbb12fae8f6b4d1b1b1d13cb7cc2b3da4886ef4b766795b20"
+  },
+  {
+    "project": "ЧИСТО",
+    "author": "Петров Кирилл",
+    "archive": "petrov-kirill-10-chisto.zip",
+    "sha256": "4d5dbb65ea46a7bec4c52a37dc98c2b3676bfc422c05fdf895e1cfc855969e2c"
+  }
+]

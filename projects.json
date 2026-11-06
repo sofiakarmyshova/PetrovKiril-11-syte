@@ -5,70 +5,111 @@
       "name": "Ритм Банк",
       "path": "sites/01-ritm-bank/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/u5F5hNCu7eyUfhZTA8YIiY/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/u5F5hNCu7eyUfhZTA8YIiY/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/01-ritm-bank",
+      "archive_path": "downloads/petrov-kirill-01-ritm-bank.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-01-ritm-bank.zip"
     },
     {
       "id": "02",
       "name": "Тёплый угол",
       "path": "sites/02-teply-ugol/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/irxVxS94X7M48gZsLvwRZ5/GPT?t=t4S8dKqmavQwTYJ7-0"
+      "figma_url": "https://www.figma.com/design/irxVxS94X7M48gZsLvwRZ5/GPT?t=t4S8dKqmavQwTYJ7-0",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/02-teply-ugol",
+      "archive_path": "downloads/petrov-kirill-02-teply-ugol.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-02-teply-ugol.zip"
     },
     {
       "id": "03",
       "name": "ГородЛайн",
       "path": "sites/03-gorodline/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/fxIRLlRHQ1P1or5Bz0uIV9/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/fxIRLlRHQ1P1or5Bz0uIV9/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/03-gorodline",
+      "archive_path": "downloads/petrov-kirill-03-gorodline.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-03-gorodline.zip"
     },
     {
       "id": "04",
       "name": "Рядом",
       "path": "sites/04-ryadom/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/ORHd4vFm6SD6Uod5UwNruS/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/ORHd4vFm6SD6Uod5UwNruS/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/04-ryadom",
+      "archive_path": "downloads/petrov-kirill-04-ryadom.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-04-ryadom.zip"
     },
     {
       "id": "05",
       "name": "Код Академия",
       "path": "sites/05-kod-academy/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/KVOCJI7QEmnszRC2WYe0mH/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/KVOCJI7QEmnszRC2WYe0mH/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/05-kod-academy",
+      "archive_path": "downloads/petrov-kirill-05-kod-academy.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-05-kod-academy.zip"
     },
     {
       "id": "06",
       "name": "Медика",
       "path": "sites/06-medika/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/uulFl0qQtRsPlzi51fTruu/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/uulFl0qQtRsPlzi51fTruu/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/06-medika",
+      "archive_path": "downloads/petrov-kirill-06-medika.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-06-medika.zip"
     },
     {
       "id": "07",
       "name": "АРТ.КВАРТАЛ",
       "path": "sites/07-art-kvartal/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/lTyPnw6e8D04L2hzDk3QTJ/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/lTyPnw6e8D04L2hzDk3QTJ/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/07-art-kvartal",
+      "archive_path": "downloads/petrov-kirill-07-art-kvartal.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-07-art-kvartal.zip"
     },
     {
       "id": "08",
       "name": "ИМПУЛЬС",
       "path": "sites/08-impulse/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/HySfrOvomqnvmRZJsWHVLq/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/HySfrOvomqnvmRZJsWHVLq/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/08-impulse",
+      "archive_path": "downloads/petrov-kirill-08-impulse.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-08-impulse.zip"
     },
     {
       "id": "09",
       "name": "МАРКЕТ+",
       "path": "sites/09-market-plus/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/T6WolrEIAGmVuKnNyP2o3h/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/T6WolrEIAGmVuKnNyP2o3h/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/09-market-plus",
+      "archive_path": "downloads/petrov-kirill-09-market-plus.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-09-market-plus.zip"
     },
     {
       "id": "10",
       "name": "ЧИСТО",
       "path": "sites/10-chisto/index.html",
       "restored_from_text": false,
-      "figma_url": "https://www.figma.com/design/nuuM6pfgCd98mbrOTuSeDV/Untitled?node-id=0-1"
+      "figma_url": "https://www.figma.com/design/nuuM6pfgCd98mbrOTuSeDV/Untitled?node-id=0-1",
+      "author": "Петров Кирилл",
+      "github_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/tree/main/sites/10-chisto",
+      "archive_path": "downloads/petrov-kirill-10-chisto.zip",
+      "archive_url": "https://github.com/sofiakarmyshova/PetrovKiril-11-syte/raw/refs/heads/main/downloads/petrov-kirill-10-chisto.zip"
     }
-  ]
+  ],
+  "author": "Петров Кирилл"
 }
