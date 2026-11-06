@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-
 :root {
   --teal: #0f766e;
   --teal-dark: #0b5d57;
@@ -1636,7 +1635,170 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
+.nav > a:not(.btn) {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.nav > a.active {
+  color: var(--teal);
+}
+.nav > a.active:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  background: var(--teal);
+}
+.nav {
+  align-items: center;
+}
+.faq-answer[hidden],
+.extra-text[hidden],
+[hidden] {
+  display: none !important;
+}
+.faq-item button {
+  width: 100%;
+}
+.service-card .service-footer button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.form-grid .field-error {
+  display: block;
+  color: #c24135;
+  font-size: 11px;
+  margin-top: 5px;
+}
+.form-grid .invalid {
+  border-color: #e24a4a;
+}
+.checkbox-label {
+  cursor: pointer;
+}
+.notice-success {
+  display: none;
+}
+.notice-success.show {
+  display: flex;
+}
+.filter-row button {
+  transition: background 0.2s;
+}
+.nav.open {
+  display: flex;
+}
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 780px) {
+  .mobile-menu {
+    display: grid;
+  }
+  .nav > a.active:after {
+    display: none;
+  }
+  .nav > a {
+    padding: 10px 0;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .header-inner {
+    justify-content: space-between;
+  }
+}
 
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;overflow-x:hidden}button,input,textarea,select{font:inherit}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}h1,h2,h3,p{margin:0}button{cursor:pointer} .logo{text-decoration:none;color:inherit} .nav>a:not(.btn){position:relative;display:inline-flex;align-items:center;font-weight:600;font-size:13px;white-space:nowrap} .nav>a.active{color:var(--teal)} .nav>a.active:after{content:"";position:absolute;height:2px;bottom:-30px;left:0;right:0;background:var(--teal)} .nav{align-items:center} .faq-answer[hidden],.extra-text[hidden],[hidden]{display:none!important}.faq-item button{width:100%}.service-card .service-footer button{display:flex;align-items:center;gap:4px}.form-grid .field-error{display:block;color:#c24135;font-size:11px;margin-top:5px}.form-grid .invalid{border-color:#e24a4a}.checkbox-label{cursor:pointer}.notice-success{display:none}.notice-success.show{display:flex} .filter-row button{transition:background .2s} .nav.open{display:flex}.mobile-menu{display:none}@media(max-width:780px){.mobile-menu{display:grid}.nav>a.active:after{display:none}.nav>a{padding:10px 0}.nav.open{display:flex}.header-inner{justify-content:space-between}}
+.portfolio-back-link {
+  display: block;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  margin: 16px auto 14px;
+  padding: 9px 16px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font:
+    500 13px/1.4 Arial,
+    sans-serif;
+  text-decoration: none;
+  opacity: 0.82;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  color: inherit;
+}
+.portfolio-back-link:hover,
+.portfolio-back-link:focus-visible {
+  opacity: 1;
+  transform: translateY(-2px);
+}
 
-.portfolio-back-link{display:block;width:max-content;max-width:calc(100% - 32px);margin:16px auto 14px;padding:9px 16px;border:1px solid currentColor;border-radius:999px;font:500 13px/1.4 Arial,sans-serif;text-decoration:none;opacity:.82;transition:opacity .2s ease,transform .2s ease;color:inherit}.portfolio-back-link:hover,.portfolio-back-link:focus-visible{opacity:1;transform:translateY(-2px)}
+@keyframes heading-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  main h1 {
+    animation: heading-enter 0.45s ease-out both;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

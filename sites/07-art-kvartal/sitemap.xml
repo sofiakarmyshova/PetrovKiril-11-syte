@@ -1,2 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/index.html</loc></url><url><loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/contacts.html</loc></url><url><loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/events.html</loc></url><url><loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/studios.html</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/contacts.html</loc>
+  </url>
+  <url>
+    <loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/events.html</loc>
+  </url>
+  <url>
+    <loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/index.html</loc>
+  </url>
+  <url>
+    <loc>https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/07-art-kvartal/studios.html</loc>
+  </url>
+</urlset>

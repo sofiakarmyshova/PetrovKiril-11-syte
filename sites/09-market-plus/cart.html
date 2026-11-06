@@ -1,1 +1,198 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Ваша корзина — МАРКЕТ+</title><meta name="description" content="Демонстрационная корзина МАРКЕТ+: изменение количества, выбор получения и учебное оформление заказа."><meta name="robots" content="index, follow"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:title" content="Ваша корзина — МАРКЕТ+"><meta property="og:description" content="Демонстрационная корзина МАРКЕТ+: изменение количества, выбор получения и учебное оформление заказа."><meta property="og:image" content="assets/img/basket.webp"><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="assets/css/style.css"><script defer src="assets/js/store.js"></script></head><body data-page="cart.html"><header class="header"><div class="container header-inner"><a href="index.html" class="logo" aria-label="МАРКЕТ+ — главная">МАРКЕТ<span>+</span></a><nav class="main-nav" aria-label="Основная навигация"><a href="index.html" class="" >Главная</a><a href="catalog.html" class="" >Каталог</a><a href="promotions.html" class="" >Акции</a><a href="cart.html" class="active" aria-current="page">Корзина</a></nav><div class="header-actions"><a href="cart.html" class="cart-link" aria-label="Корзина"><span class="cart-count" data-cart-count>0</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13h12l2.4-9H6"/></svg></a><button class="hamburger" id="mobile-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav">☰</button></div></div><nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация"><a href="index.html" class="" >Главная</a><a href="catalog.html" class="" >Каталог</a><a href="promotions.html" class="" >Акции</a><a href="cart.html" class="active" aria-current="page">Корзина</a></nav></header><main id="main"><section class="section"><div class="container"><div class="section-header"><span class="eyebrow">Ваши покупки</span><h1 style="font-size:clamp(37px,4vw,52px);font-weight:500;margin:0 0 10px">Ваша корзина</h1><p>Добавьте продукты из каталога</p></div><div id="cart-content" class="basket-content" aria-live="polite"><div class="empty-cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13h12l2.4-9H6"/></svg><h2>Корзина пока пуста</h2><p>Загляните в каталог — там много свежих продуктов.</p><a href="catalog.html" class="btn btn-primary">Перейти в каталог</a></div></div></div></section></main><footer class="footer"><div class="container"><div class="footer-grid"><div><a href="index.html" class="logo">МАРКЕТ<span>+</span></a><p>Свежие продукты для вашего стола каждый день.</p></div><div><h3>Покупателям</h3><a href="catalog.html">Каталог</a><a href="promotions.html">Акции</a><a href="cart.html">Корзина</a></div><div><h3>Контакты</h3><a href="tel:+79001234567">+7 (900) 123-45-67</a><a href="mailto:hello@market-plus.demo">hello@market-plus.demo</a><span>Ежедневно, 08:00–23:00</span></div><div><h3>Наш магазин</h3><span>г. Примерск, ул. Зелёная, 12</span><span>Все адреса и контакты вымышлены.</span></div></div><div class="footer-bottom">© 2026 МАРКЕТ+<small>Учебный демонстрационный проект. Магазин вымышленный.</small></div></div><a class="portfolio-back-link" href="../../index.html" aria-label="Вернуться к портфолио из десяти сайтов">← К портфолио</a></footer><div id="toast" class="toast" role="status" aria-live="polite"></div></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Ваша корзина — МАРКЕТ+</title>
+    <meta
+      name="description"
+      content="Демонстрационная корзина МАРКЕТ+: изменение количества, выбор получения и учебное оформление заказа."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/store.js"></script>
+    <link
+      rel="canonical"
+      href="https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/cart.html"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="keywords"
+      content="супермаркет, каталог продуктов, акции на продукты"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="МАРКЕТ+" />
+    <meta property="og:title" content="Ваша корзина — МАРКЕТ+" />
+    <meta
+      property="og:description"
+      content="Демонстрационная корзина МАРКЕТ+: изменение количества, выбор получения и учебное оформление заказа."
+    />
+    <meta
+      property="og:url"
+      content="https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/cart.html"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/cart.html#page",
+            "url": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/cart.html",
+            "name": "Ваша корзина — МАРКЕТ+",
+            "description": "Демонстрационная корзина МАРКЕТ+: изменение количества, выбор получения и учебное оформление заказа.",
+            "inLanguage": "ru",
+            "isPartOf": {
+              "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/index.html#website"
+            },
+            "about": {
+              "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/index.html#organization"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/index.html#website",
+            "url": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/index.html",
+            "name": "МАРКЕТ+",
+            "inLanguage": "ru"
+          },
+          {
+            "@type": "GroceryStore",
+            "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/index.html#organization",
+            "name": "МАРКЕТ+",
+            "url": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/09-market-plus/index.html",
+            "description": "Учебный проект. Организация вымышленная."
+          }
+        ]
+      }
+    </script>
+    <script defer src="../../assets/analytics.js"></script>
+  </head>
+  <body data-page="cart.html">
+    <header class="header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="МАРКЕТ+ — главная"
+          >МАРКЕТ<span>+</span></a
+        >
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="index.html" class="">Главная</a
+          ><a href="catalog.html" class="">Каталог</a
+          ><a href="promotions.html" class="">Акции</a
+          ><a href="cart.html" class="active" aria-current="page">Корзина</a>
+        </nav>
+        <div class="header-actions">
+          <a href="cart.html" class="cart-link" aria-label="Корзина"
+            ><span class="cart-count" data-cart-count>0</span
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="20" cy="21" r="1" />
+              <path d="M1 1h4l2.7 13h12l2.4-9H6" /></svg></a
+          ><button
+            class="hamburger"
+            id="mobile-toggle"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация">
+        <a href="index.html" class="">Главная</a
+        ><a href="catalog.html" class="">Каталог</a
+        ><a href="promotions.html" class="">Акции</a
+        ><a href="cart.html" class="active" aria-current="page">Корзина</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Ваши покупки</span>
+            <h1
+              style="
+                font-size: clamp(37px, 4vw, 52px);
+                font-weight: 500;
+                margin: 0 0 10px;
+              "
+            >
+              Ваша корзина
+            </h1>
+            <p>Добавьте продукты из каталога</p>
+          </div>
+          <div id="cart-content" class="basket-content" aria-live="polite">
+            <div class="empty-cart">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.7 13h12l2.4-9H6" />
+              </svg>
+              <h2>Корзина пока пуста</h2>
+              <p>Загляните в каталог — там много свежих продуктов.</p>
+              <a href="catalog.html" class="btn btn-primary"
+                >Перейти в каталог</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="logo">МАРКЕТ<span>+</span></a>
+            <p>Свежие продукты для вашего стола каждый день.</p>
+          </div>
+          <div>
+            <h3>Покупателям</h3>
+            <a href="catalog.html">Каталог</a><a href="promotions.html">Акции</a
+            ><a href="cart.html">Корзина</a>
+          </div>
+          <div>
+            <h3>Контакты</h3>
+            <a href="tel:+79001234567">+7 (900) 123-45-67</a
+            ><a href="mailto:hello@market-plus.demo">hello@market-plus.demo</a
+            ><span>Ежедневно, 08:00–23:00</span>
+          </div>
+          <div>
+            <h3>Наш магазин</h3>
+            <span>г. Примерск, ул. Зелёная, 12</span
+            ><span>Все адреса и контакты вымышлены.</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2026 МАРКЕТ+<small
+            >Учебный демонстрационный проект. Магазин вымышленный.</small
+          >
+        </div>
+      </div>
+      <a
+        class="portfolio-back-link"
+        href="../../index.html"
+        aria-label="Вернуться к портфолио из десяти сайтов"
+        >← К портфолио</a
+      >
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

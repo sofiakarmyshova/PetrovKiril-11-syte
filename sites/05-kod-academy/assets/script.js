@@ -1,7 +1,105 @@
-document.addEventListener('DOMContentLoaded',function(){
-const menuButton=document.querySelector('.menu-toggle'),mobileNav=document.querySelector('.mobile-nav');
-if(menuButton&&mobileNav){menuButton.addEventListener('click',()=>{const open=mobileNav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню')});mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){mobileNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}})}
-document.querySelectorAll('.program-toggle').forEach(button=>button.addEventListener('click',()=>{const panel=document.getElementById(button.getAttribute('aria-controls'));const open=panel.hidden;panel.hidden=!open;button.setAttribute('aria-expanded',String(open));button.innerHTML=open?'Скрыть подробности ↑':'Подробнее о программе →'}));
-const levelButtons=document.querySelectorAll('[data-level]'),duration=document.getElementById('duration'),beginning=document.getElementById('beginning'),note=document.getElementById('education-note');levelButtons.forEach(button=>button.addEventListener('click',()=>{levelButtons.forEach(x=>{const active=x===button;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});const after11=button.dataset.level==='11';if(duration)duration.textContent=after11?'2 года 10 месяцев':'3 года 10 месяцев';if(note)note.textContent=after11?'Для поступления нужен аттестат о среднем общем образовании. Условия приведены для демонстрационного сайта.':'Для поступления нужен аттестат об основном общем образовании. Результаты ОГЭ не учитываются отдельно.'}));
-const form=document.getElementById('application-form');if(form){const phone=form.elements.phone;phone.addEventListener('input',()=>{let d=phone.value.replace(/\D/g,'');if(d.startsWith('8'))d='7'+d.slice(1);if(d.length&&!d.startsWith('7'))d='7'+d;d=d.slice(0,11);let v=d?'+7':'';if(d.length>1)v+=' ('+d.slice(1,4);if(d.length>=4)v+=')';if(d.length>4)v+=' '+d.slice(4,7);if(d.length>7)v+='-'+d.slice(7,9);if(d.length>9)v+='-'+d.slice(9,11);phone.value=v});form.addEventListener('submit',e=>{e.preventDefault();const status=form.querySelector('.form-feedback');status.className='form-feedback';form.querySelectorAll('[aria-invalid]').forEach(el=>el.removeAttribute('aria-invalid'));const bad=[...form.querySelectorAll('input[required],select[required]')].filter(el=>!el.checkValidity()||(el.name==='phone'&&el.value.replace(/\D/g,'').length!==11));if(bad.length){bad.forEach(el=>el.setAttribute('aria-invalid','true'));status.classList.add('error');status.textContent='Проверьте имя, телефон, Email и выбранную специальность.';bad[0].focus();return}status.classList.add('success');status.textContent='Заявка заполнена успешно. Это учебный проект: данные никуда не отправляются.';form.reset()})}
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector(".menu-toggle"),
+    mobileNav = document.querySelector(".mobile-nav");
+  if (menuButton && mobileNav) {
+    menuButton.addEventListener("click", () => {
+      const open = mobileNav.classList.toggle("open");
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute(
+        "aria-label",
+        open ? "Закрыть меню" : "Открыть меню",
+      );
+    });
+    mobileNav.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => {
+        mobileNav.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      }),
+    );
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        mobileNav.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+  document.querySelectorAll(".program-toggle").forEach((button) =>
+    button.addEventListener("click", () => {
+      const panel = document.getElementById(
+        button.getAttribute("aria-controls"),
+      );
+      const open = panel.hidden;
+      panel.hidden = !open;
+      button.setAttribute("aria-expanded", String(open));
+      button.innerHTML = open
+        ? "Скрыть подробности ↑"
+        : "Подробнее о программе →";
+    }),
+  );
+  const levelButtons = document.querySelectorAll("[data-level]"),
+    duration = document.getElementById("duration"),
+    beginning = document.getElementById("beginning"),
+    note = document.getElementById("education-note");
+  levelButtons.forEach((button) =>
+    button.addEventListener("click", () => {
+      levelButtons.forEach((x) => {
+        const active = x === button;
+        x.classList.toggle("active", active);
+        x.setAttribute("aria-pressed", String(active));
+      });
+      const after11 = button.dataset.level === "11";
+      if (duration)
+        duration.textContent = after11
+          ? "2 года 10 месяцев"
+          : "3 года 10 месяцев";
+      if (note)
+        note.textContent = after11
+          ? "Для поступления нужен аттестат о среднем общем образовании. Условия приведены для демонстрационного сайта."
+          : "Для поступления нужен аттестат об основном общем образовании. Результаты ОГЭ не учитываются отдельно.";
+    }),
+  );
+  const form = document.getElementById("application-form");
+  if (form) {
+    const phone = form.elements.phone;
+    phone.addEventListener("input", () => {
+      let d = phone.value.replace(/\D/g, "");
+      if (d.startsWith("8")) d = "7" + d.slice(1);
+      if (d.length && !d.startsWith("7")) d = "7" + d;
+      d = d.slice(0, 11);
+      let v = d ? "+7" : "";
+      if (d.length > 1) v += " (" + d.slice(1, 4);
+      if (d.length >= 4) v += ")";
+      if (d.length > 4) v += " " + d.slice(4, 7);
+      if (d.length > 7) v += "-" + d.slice(7, 9);
+      if (d.length > 9) v += "-" + d.slice(9, 11);
+      phone.value = v;
+    });
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const status = form.querySelector(".form-feedback");
+      status.className = "form-feedback";
+      form
+        .querySelectorAll("[aria-invalid]")
+        .forEach((el) => el.removeAttribute("aria-invalid"));
+      const bad = [
+        ...form.querySelectorAll("input[required],select[required]"),
+      ].filter(
+        (el) =>
+          !el.checkValidity() ||
+          (el.name === "phone" && el.value.replace(/\D/g, "").length !== 11),
+      );
+      if (bad.length) {
+        bad.forEach((el) => el.setAttribute("aria-invalid", "true"));
+        status.classList.add("error");
+        status.textContent =
+          "Проверьте имя, телефон, Email и выбранную специальность.";
+        bad[0].focus();
+        return;
+      }
+      status.classList.add("success");
+      status.textContent =
+        "Заявка заполнена успешно. Это учебный проект: данные никуда не отправляются.";
+      form.reset();
+    });
+  }
 });

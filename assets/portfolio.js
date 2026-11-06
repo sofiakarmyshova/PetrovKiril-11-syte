@@ -1,1 +1,50 @@
-document.addEventListener('DOMContentLoaded',()=>{const buttons=[...document.querySelectorAll('.filter')],input=document.querySelector('#site-search'),cards=[...document.querySelectorAll('.project-card')],count=document.querySelector('#result-count'),empty=document.querySelector('#no-results');const publicTypes=new Set(['transport','social','education','health','culture','sport']),businessTypes=new Set(['finance','food','trade','services']);let filter='all';function update(){const query=input.value.toLowerCase().trim();let visible=0;for(const card of cards){const category=card.dataset.category;const allowed=filter==='all'||filter==='public'&&publicTypes.has(category)||filter==='business'&&businessTypes.has(category);const show=allowed&&card.dataset.search.includes(query);card.hidden=!show;if(show)visible++;}count.textContent=visible+' '+(visible%10===1&&visible%100!==11?'проект':visible%10>=2&&visible%10<=4&&(visible%100<12||visible%100>14)?'проекта':'проектов');empty.hidden=visible!==0;}for(const b of buttons)b.addEventListener('click',()=>{filter=b.dataset.filter;buttons.forEach(x=>x.classList.toggle('active',x===b));update();});input.addEventListener('input',update);update();});
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = [...document.querySelectorAll(".filter")],
+    input = document.querySelector("#site-search"),
+    cards = [...document.querySelectorAll(".project-card")],
+    count = document.querySelector("#result-count"),
+    empty = document.querySelector("#no-results");
+  const publicTypes = new Set([
+      "transport",
+      "social",
+      "education",
+      "health",
+      "culture",
+      "sport",
+    ]),
+    businessTypes = new Set(["finance", "food", "trade", "services"]);
+  let filter = "all";
+  function update() {
+    const query = input.value.toLowerCase().trim();
+    let visible = 0;
+    for (const card of cards) {
+      const category = card.dataset.category;
+      const allowed =
+        filter === "all" ||
+        (filter === "public" && publicTypes.has(category)) ||
+        (filter === "business" && businessTypes.has(category));
+      const show = allowed && card.dataset.search.includes(query);
+      card.hidden = !show;
+      if (show) visible++;
+    }
+    count.textContent =
+      visible +
+      " " +
+      (visible % 10 === 1 && visible % 100 !== 11
+        ? "проект"
+        : visible % 10 >= 2 &&
+            visible % 10 <= 4 &&
+            (visible % 100 < 12 || visible % 100 > 14)
+          ? "проекта"
+          : "проектов");
+    empty.hidden = visible !== 0;
+  }
+  for (const b of buttons)
+    b.addEventListener("click", () => {
+      filter = b.dataset.filter;
+      buttons.forEach((x) => x.classList.toggle("active", x === b));
+      update();
+    });
+  input.addEventListener("input", update);
+  update();
+});

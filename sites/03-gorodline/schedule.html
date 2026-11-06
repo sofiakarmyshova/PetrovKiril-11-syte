@@ -1,1 +1,296 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Демонстрационное расписание движения городского транспорта ГородЛайн по будням и выходным."><meta name="theme-color" content="#2563eb"><meta property="og:type" content="website"><meta property="og:site_name" content="ГородЛайн"><meta name="robots" content="index, follow"><title>Расписание — ГородЛайн</title><link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><script src="js/data.js" defer></script><script src="js/main.js" defer></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ГородЛайн","description":"Демонстрационная городская транспортная компания (учебный проект)","telephone":"8 800 550-01-12","email":"info@gorodline.ru","address":{"@type":"PostalAddress","streetAddress":"ул. Транспортная, 14","addressCountry":"RU"}}</script></head><body data-page="schedule.html"><a class="skip-link" href="#main">Перейти к содержимому</a><header class="site-header" id="top"><div class="container header-inner"><a href="index.html" class="brand" aria-label="ГородЛайн — главная"><span class="brand-symbol"><i></i><i></i><i></i></span><span>Город<span class="brand-accent">Лайн</span></span></a><nav class="main-nav" id="site-nav" aria-label="Основная навигация"><a href="index.html" >Главная</a><a href="routes.html" >Маршруты</a><a href="schedule.html" aria-current="page" class="active" >Расписание</a><a href="contacts.html" >Контакты</a></nav><a class="header-contact" href="tel:88005500112"><small>Диспетчерская</small><strong>8 800 550-01-12</strong></a><button class="menu-toggle" aria-label="Открыть меню" aria-controls="site-nav" aria-expanded="false" type="button"><span></span><span></span><span></span></button></div></header><main id="main"><section class="page-hero"><div class="page-hero-circle" aria-hidden="true"></div><div class="container"><p class="eyebrow">Планируйте поездку</p><h1>Расписание движения</h1><p>Выберите маршрут и узнайте время прибытия транспорта на остановки.</p></div></section><section class="section-tight schedule-section"><div class="container"><div class="schedule-filter-panel"><div class="field route-select-field"><label for="schedule-route">Выберите маршрут</label><div class="schedule-select-wrap"><span class="schedule-route-badge" id="selected-route-number">12</span><select id="schedule-route" aria-label="Выберите маршрут"></select><span class="select-chevron" aria-hidden="true">⌄</span></div></div><fieldset class="day-filter"><legend>Дни движения</legend><div class="day-options" role="group" aria-label="Дни движения"><button type="button" class="day-btn selected" data-day="weekday" aria-pressed="true">Будни</button><button type="button" class="day-btn" data-day="weekend" aria-pressed="false">Выходные</button></div></fieldset></div><div class="timetable-card"><div class="timetable-heading"><span class="big-route-badge" id="table-number">12</span><div class="timetable-title"><small id="table-transport">Автобус</small><h2 id="table-name">Ж/д вокзал — Северный микрорайон</h2></div><span class="schedule-status"><span class="status-dot"></span>По расписанию</span></div><div class="table-scroll" tabindex="0" role="region" aria-label="Таблица времени прибытия, прокручивается по горизонтали"><table class="schedule-table"><thead><tr><th scope="col">Остановка</th><th scope="col">Рейс 1</th><th scope="col">Рейс 2</th><th scope="col">Рейс 3</th><th scope="col">Рейс 4</th></tr></thead><tbody id="schedule-body"></tbody></table></div><div class="timetable-bottom"><span class="time-note"><img src="assets/icons/clock.svg" alt="" width="17" height="17">Интервал движения: <span id="schedule-interval">8–12 мин</span></span><span>Время указано местное</span></div></div><aside class="schedule-alert"><div class="notice-icon">i</div><div class="alert-text"><strong>Возможны изменения</strong><p>Расписание является демонстрационным. Время прибытия может меняться из-за дорожной обстановки и погодных условий.</p></div><a href="tel:88005500112" class="notice-link"><img src="assets/icons/phone.svg" width="17" height="17" alt="">Уточнить у диспетчера</a></aside></div></section></main><footer class="site-footer" id="footer"><div class="container footer-grid"><div class="footer-about"><a href="index.html" class="brand" aria-label="ГородЛайн — главная"><span class="brand-symbol"><i></i><i></i><i></i></span><span>Город<span class="brand-accent">Лайн</span></span></a><p>Городской транспорт, который помогает<br class="desktop-only"> быть вовремя.</p></div><div class="footer-col"><h3>Навигация</h3><a href="index.html">Главная</a><a href="routes.html">Маршруты</a><a href="schedule.html">Расписание</a><a href="contacts.html">Контакты</a></div><div class="footer-col"><h3>Пассажирам</h3><a href="routes.html#route-search">Поиск маршрута</a><a href="schedule.html">Расписание</a><a href="index.html#payment">Оплата проезда</a></div><div class="footer-col footer-contacts"><h3>Контакты</h3><a href="tel:88005500112">8 800 550-01-12</a><a href="mailto:info@gorodline.ru">info@gorodline.ru</a><a href="contacts.html#map">ул. Транспортная, 14</a></div></div><div class="container footer-bottom"><span>© 2025 «ГородЛайн»</span><span>Учебный проект</span><button type="button" class="link-plain footer-privacy" data-dialog-open="privacy">Политика конфиденциальности</button></div><a class="portfolio-back-link" href="../../index.html" aria-label="Вернуться к портфолио из десяти сайтов">← К портфолио</a></footer><dialog class="info-dialog" id="privacy-dialog" aria-labelledby="privacy-title"><div class="dialog-content"><button type="button" class="dialog-close" data-dialog-close aria-label="Закрыть">×</button><p class="eyebrow">Учебный проект</p><h2 id="privacy-title">Политика конфиденциальности</h2><p>Сайт «ГородЛайн» создан в учебных целях. Информация, расписания, контактные данные и названия организаций являются демонстрационными.</p><p>Форма обратной связи работает только в браузере: отправка на сервер и хранение введённых данных не выполняются.</p><button class="btn btn-primary" type="button" data-dialog-close>Понятно</button></div></dialog><div class="toast" id="toast" aria-live="polite" role="status" hidden></div></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Демонстрационное расписание движения городского транспорта ГородЛайн по будням и выходным."
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Расписание — ГородЛайн</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link
+      rel="canonical"
+      href="https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/schedule.html"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta
+      name="keywords"
+      content="городской транспорт, маршруты автобусов, расписание транспорта"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="ГородЛайн" />
+    <meta property="og:title" content="Расписание — ГородЛайн" />
+    <meta
+      property="og:description"
+      content="Демонстрационное расписание движения городского транспорта ГородЛайн по будням и выходным."
+    />
+    <meta
+      property="og:url"
+      content="https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/schedule.html"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/schedule.html#page",
+            "url": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/schedule.html",
+            "name": "Расписание — ГородЛайн",
+            "description": "Демонстрационное расписание движения городского транспорта ГородЛайн по будням и выходным.",
+            "inLanguage": "ru",
+            "isPartOf": {
+              "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/index.html#website"
+            },
+            "about": {
+              "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/index.html#organization"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/index.html#website",
+            "url": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/index.html",
+            "name": "ГородЛайн",
+            "inLanguage": "ru"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/index.html#organization",
+            "name": "ГородЛайн",
+            "url": "https://sofiakarmyshova.github.io/PetrovKiril-11-syte/sites/03-gorodline/index.html",
+            "description": "Учебный проект. Организация вымышленная."
+          }
+        ]
+      }
+    </script>
+    <script defer src="../../assets/analytics.js"></script>
+  </head>
+  <body data-page="schedule.html">
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="ГородЛайн — главная"
+          ><span class="brand-symbol"><i></i><i></i><i></i></span
+          ><span>Город<span class="brand-accent">Лайн</span></span></a
+        >
+        <nav class="main-nav" id="site-nav" aria-label="Основная навигация">
+          <a href="index.html">Главная</a><a href="routes.html">Маршруты</a
+          ><a href="schedule.html" aria-current="page" class="active"
+            >Расписание</a
+          ><a href="contacts.html">Контакты</a>
+        </nav>
+        <a class="header-contact" href="tel:88005500112"
+          ><small>Диспетчерская</small><strong>8 800 550-01-12</strong></a
+        ><button
+          class="menu-toggle"
+          aria-label="Открыть меню"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero-circle" aria-hidden="true"></div>
+        <div class="container">
+          <p class="eyebrow">Планируйте поездку</p>
+          <h1>Расписание движения</h1>
+          <p>
+            Выберите маршрут и узнайте время прибытия транспорта на остановки.
+          </p>
+        </div>
+      </section>
+      <section class="section-tight schedule-section">
+        <div class="container">
+          <div class="schedule-filter-panel">
+            <div class="field route-select-field">
+              <label for="schedule-route">Выберите маршрут</label>
+              <div class="schedule-select-wrap">
+                <span class="schedule-route-badge" id="selected-route-number"
+                  >12</span
+                ><select
+                  id="schedule-route"
+                  aria-label="Выберите маршрут"
+                ></select
+                ><span class="select-chevron" aria-hidden="true">⌄</span>
+              </div>
+            </div>
+            <fieldset class="day-filter">
+              <legend>Дни движения</legend>
+              <div class="day-options" role="group" aria-label="Дни движения">
+                <button
+                  type="button"
+                  class="day-btn selected"
+                  data-day="weekday"
+                  aria-pressed="true"
+                >
+                  Будни</button
+                ><button
+                  type="button"
+                  class="day-btn"
+                  data-day="weekend"
+                  aria-pressed="false"
+                >
+                  Выходные
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="timetable-card">
+            <div class="timetable-heading">
+              <span class="big-route-badge" id="table-number">12</span>
+              <div class="timetable-title">
+                <small id="table-transport">Автобус</small>
+                <h2 id="table-name">Ж/д вокзал — Северный микрорайон</h2>
+              </div>
+              <span class="schedule-status"
+                ><span class="status-dot"></span>По расписанию</span
+              >
+            </div>
+            <div
+              class="table-scroll"
+              tabindex="0"
+              role="region"
+              aria-label="Таблица времени прибытия, прокручивается по горизонтали"
+            >
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Остановка</th>
+                    <th scope="col">Рейс 1</th>
+                    <th scope="col">Рейс 2</th>
+                    <th scope="col">Рейс 3</th>
+                    <th scope="col">Рейс 4</th>
+                  </tr>
+                </thead>
+                <tbody id="schedule-body"></tbody>
+              </table>
+            </div>
+            <div class="timetable-bottom">
+              <span class="time-note"
+                ><img
+                  alt=""
+                  height="17"
+                  src="assets/icons/clock.svg"
+                  width="17"
+                />Интервал движения:
+                <span id="schedule-interval">8–12 мин</span></span
+              ><span>Время указано местное</span>
+            </div>
+          </div>
+          <aside class="schedule-alert">
+            <div class="notice-icon">i</div>
+            <div class="alert-text">
+              <strong>Возможны изменения</strong>
+              <p>
+                Расписание является демонстрационным. Время прибытия может
+                меняться из-за дорожной обстановки и погодных условий.
+              </p>
+            </div>
+            <a href="tel:88005500112" class="notice-link"
+              ><img
+                alt=""
+                height="17"
+                src="assets/icons/phone.svg"
+                width="17"
+              />Уточнить у диспетчера</a
+            >
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="footer">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand" aria-label="ГородЛайн — главная"
+            ><span class="brand-symbol"><i></i><i></i><i></i></span
+            ><span>Город<span class="brand-accent">Лайн</span></span></a
+          >
+          <p>
+            Городской транспорт, который помогает<br class="desktop-only" />
+            быть вовремя.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Навигация</h3>
+          <a href="index.html">Главная</a><a href="routes.html">Маршруты</a
+          ><a href="schedule.html">Расписание</a
+          ><a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer-col">
+          <h3>Пассажирам</h3>
+          <a href="routes.html#route-search">Поиск маршрута</a
+          ><a href="schedule.html">Расписание</a
+          ><a href="index.html#payment">Оплата проезда</a>
+        </div>
+        <div class="footer-col footer-contacts">
+          <h3>Контакты</h3>
+          <a href="tel:88005500112">8 800 550-01-12</a
+          ><a href="mailto:info@gorodline.ru">info@gorodline.ru</a
+          ><a href="contacts.html#map">ул. Транспортная, 14</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2025 «ГородЛайн»</span><span>Учебный проект</span
+        ><button
+          type="button"
+          class="link-plain footer-privacy"
+          data-dialog-open="privacy"
+        >
+          Политика конфиденциальности
+        </button>
+      </div>
+      <a
+        class="portfolio-back-link"
+        href="../../index.html"
+        aria-label="Вернуться к портфолио из десяти сайтов"
+        >← К портфолио</a
+      >
+    </footer>
+    <dialog
+      class="info-dialog"
+      id="privacy-dialog"
+      aria-labelledby="privacy-title"
+    >
+      <div class="dialog-content">
+        <button
+          type="button"
+          class="dialog-close"
+          data-dialog-close
+          aria-label="Закрыть"
+        >
+          ×
+        </button>
+        <p class="eyebrow">Учебный проект</p>
+        <h2 id="privacy-title">Политика конфиденциальности</h2>
+        <p>
+          Сайт «ГородЛайн» создан в учебных целях. Информация, расписания,
+          контактные данные и названия организаций являются демонстрационными.
+        </p>
+        <p>
+          Форма обратной связи работает только в браузере: отправка на сервер и
+          хранение введённых данных не выполняются.
+        </p>
+        <button class="btn btn-primary" type="button" data-dialog-close>
+          Понятно
+        </button>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" aria-live="polite" role="status" hidden></div>
+  </body>
+</html>
